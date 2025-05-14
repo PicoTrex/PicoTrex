@@ -21,12 +21,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Enable Corepack and set correct Yarn version
+      - name: Enable Corepack and set Yarn 4.9.1
         run: |
           corepack enable
           corepack prepare yarn@4.9.1 --activate
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -35,13 +35,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build project with Next.js (static export)
-        run: yarn next build
+      - name: Build static site (Next.js export mode)
+        run: yarn build  # 只执行 yarn build 即可！
 
-      - name: Upload static output to GitHub Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out  # 🚨 关键：必须是 ./out 文件夹
 
   deploy:
     needs: build
