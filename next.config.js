@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
 
-  basePath: '/PicoTrex/',
+  basePath: '/PicoTrex',
   assetPrefix: '/PicoTrex',
 
   reactStrictMode: true,
