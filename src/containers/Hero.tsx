@@ -130,6 +130,7 @@ const Hero = () => {
               src={image.src}
               alt={image.alt}
               fill
+              unoptimized 
               className="object-contain"
               priority
               style={{
