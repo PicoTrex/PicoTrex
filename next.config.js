@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-
-  // ✅ 告诉 Next.js 导出静态站点（配合 yarn next build，不再需要 next export）
   output: 'export',
 
-  // ✅ 如果你使用的是 app/ 路由结构，必须显式启用
+  basePath: '/PicoTrex',
+  assetPrefix: '/PicoTrex',
+
+  reactStrictMode: true,
   experimental: {
     appDir: true,
   },
