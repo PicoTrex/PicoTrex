@@ -4,11 +4,10 @@ const nextConfig = {
 
   basePath: '/PicoTrex',
   assetPrefix: '/PicoTrex',
-
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
+  // reactStrictMode: true,
+  // experimental: {
+  //   appDir: true,
+  // },
 
   images: {
     unoptimized: true
