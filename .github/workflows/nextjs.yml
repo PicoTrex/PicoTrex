@@ -26,42 +26,35 @@ concurrency:
   cancel-in-progress: false
  
 jobs:
-  # Build job 部署任务
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # 设置 Node 和指定版本
       - name: Set Up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Enable Corepack and set Yarn 4.9.1
+        run: |
+          corepack enable
+          corepack prepare yarn@4.9.1 --activate
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
-          # Automatically inject basePath in your Next.js configuration file and disable 在 Next.js 配置文件中自动注入 basePath 并禁用
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized). 服务器端镜像优化
-          #
-          # You may remove this line if you want to manage the configuration yourself. 如果您想自己管理配置，可以删除此行。
           static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v3
         with:
           path: |
             .next/cache
-          # Generate a new cache whenever packages or source files change. 当包或源文件发生更改时生成新的缓存。
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache. 如果源文件发生了变化但包没有变化，则从先前的缓存中重建。
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
-      # 安装依赖
       - name: Install dependencies
         run: yarn install
-      # 编译
       - name: Build with Next.js
         run: yarn build
-      # 上传工作 Build 完的静态文件会存放在 out 文件夹，在 next.config.js 中配置 output: 'export'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
