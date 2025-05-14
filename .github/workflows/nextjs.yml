@@ -2,7 +2,7 @@ name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main]  # 或你的默认分支
   workflow_dispatch:
 
 permissions:
@@ -17,31 +17,33 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Enable Corepack and set Yarn 4.9.1
-        run: |
-          corepack enable
-          corepack prepare yarn@4.9.1 --activate
+      - name: Enable corepack (for Yarn 4+)
+        run: corepack enable
 
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: yarn
+          node-version: '20'
+          cache: 'yarn'
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Build static site (Next.js export mode)
-        run: yarn build  # 只执行 yarn build 即可！
+      - name: Build & Export static site
+        run: |
+          yarn build
+          yarn export
+          touch out/.nojekyll  # 👈 确保 GitHub Pages 处理 _next 正确
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out  # 🚨 关键：必须是 ./out 文件夹
+          path: ./out
 
   deploy:
     needs: build
