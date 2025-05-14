@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Color variables for future use */
+  :root {
+    /* --color-bg: #fcfaf8; */
+    /* --color-accent: #14cf93; */
+    /* --color-accent: ##64ffda; */
+    /* --color-accent: #61dafb); */
+    /* --color-text: #383838; */
+    /* --color-dark-2: #282828; */
+    /* --color-dark-3: #a2a2a2; */
+
+    /* Light Theme */
+    /* --color-bg: theme(colors.slate.50); */
+    /* --color-bg-secondary: theme(colors.white); */
+    --color-bg: rgb(233, 217, 202);
+    --color-bg-secondary: rgba(255, 255, 255, 0.8);
+    --color-accent: #fe6835;
+    --color-accent-light: rgba(254, 104, 53, 0.1);
+    --color-accent-torch: rgba(254, 104, 53, 0.15);
+    --color-text: theme(colors.slate.600);
+    --color-dark-1: theme(colors.slate.900);
+    --color-dark-2: theme(colors.slate.700);
+    --color-dark-3: theme(colors.slate.300);
+  }
+
+  /* Dark Theme */
+  .dark {
+    /* --color-bg: theme(colors.slate.900); */
+    /* --color-bg-secondary: theme(colors.slate.800); */
+    --color-bg: rgb(44, 48, 41);
+    --color-bg-secondary: rgba(113, 113, 113, 0.8);
+    /* --color-bg-secondary: rgb(140, 130, 120, 0.7); */
+    --color-accent: #fe6835;
+    --color-accent-light: rgb(254, 104, 53, 0.1);
+    --color-text: theme(colors.slate.400);
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
+  }
+
+  @font-face {
+    font-family: 'agustina';
+    src: url('/fonts/Agustina-Signature.otf') format('opentype');
+  }
+
+  * {
+    @apply focus:outline outline-[2px] outline-offset-1 outline-accent rounded;
+  }
+
+  ::selection {
+    @apply dark:bg-slate-600/30 bg-slate-400/30 text-accent;
+  }
+}
+
+/* TYPOGRAPHY */
+
+.heading-secondary,
+.h2 {
+  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
+}
+.heading-tertiary,
+.h3 {
+  @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
+}
