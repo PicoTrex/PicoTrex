@@ -63,7 +63,7 @@ jobs:
         run: npm run build
       # 上传工作 Build 完的静态文件会存放在 out 文件夹，在 next.config.js 中配置 output: 'export'
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
