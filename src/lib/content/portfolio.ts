@@ -25,7 +25,7 @@ export const seoData = {
     'Small Data, Deep Insights, Meaningful Treks — exploring infinite possibilities from every pico piece. ',
   author: author.name,
   image:
-    '/favicons/android-chrome-512x512.png',
+    './favicons/android-chrome-512x512.png',
   url: 'https://github.com/PicoTrex',
   keywords: [
     'Pico',

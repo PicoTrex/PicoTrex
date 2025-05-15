@@ -8,7 +8,7 @@ export const projectsSection: ProjectsSectionType = {
       id: getId(),
       name: 'LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models',
       url: 'https://opendatalab.github.io/LOKI/',
-      img: '/images/LOKI.jpg',
+      img: './images/LOKI.jpg',
       year: 2025,
       tags: ['ICLR'],
       links: {
@@ -21,7 +21,7 @@ export const projectsSection: ProjectsSectionType = {
       id: getId(),
       name: 'CrossViewDiff: A Cross-View Diffusion Model for Satellite-to-Street View Synthesis',
       url: 'https://opendatalab.github.io/CrossViewDiff/',
-      img: '/images/CrossViewDiff.jpg',
+      img: './images/CrossViewDiff.jpg',
       year: 2024,
       tags: ['arXiv'],
       links: {

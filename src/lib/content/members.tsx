@@ -28,11 +28,11 @@ export const members: Member[] = [
     affiliations: [
       {
         name: "Sun Yat-sen University",
-        logo: "/assets/affiliations/SYSU.png"
+        logo: "./assets/affiliations/SYSU.png"
       },
       {
         name: "Shanghai AI Lab",
-        logo: "/assets/affiliations/Shanghai_AILAB.png"
+        logo: "./assets/affiliations/Shanghai_AILAB.png"
       }
     ],
     introduction: (
@@ -60,7 +60,7 @@ export const members: Member[] = [
       </>
     ),
     themeColor: "#e0b771",
-    imageUrl: "/assets/members/JunyanYe.png",
+    imageUrl: "./assets/members/JunyanYe.png",
     personalUrl: "https://yejy53.github.io/",
     shadowOffset: { x: 15, y: 15 },
     socialLinks: {
@@ -75,7 +75,7 @@ export const members: Member[] = [
     affiliations: [
       {
         name: "Sun Yat-sen University",
-        logo: "/assets/affiliations/SYSU.png"
+        logo: "./assets/affiliations/SYSU.png"
       }
     ],
     introduction: (
@@ -94,7 +94,7 @@ export const members: Member[] = [
       </>
     ),
     themeColor: "#f5abeb",
-    imageUrl: "/assets/members/JunHe.png",
+    imageUrl: "./assets/members/JunHe.png",
     personalUrl: " ",
     shadowOffset: { x: 15, y: 15 },
     socialLinks: {
@@ -108,7 +108,7 @@ export const members: Member[] = [
     affiliations: [
       {
         name: "Sun Yat-sen University",
-        logo: "/assets/affiliations/SYSU.png"
+        logo: "./assets/affiliations/SYSU.png"
       }
     ],
     introduction: (
@@ -141,7 +141,7 @@ export const members: Member[] = [
       </>
     ),
     themeColor: "#FF6B6B",
-    imageUrl: "/assets/members/ZilongHuang.png",
+    imageUrl: "./assets/members/ZilongHuang.png",
     personalUrl: "https://wangwu.com",
     shadowOffset: { x: 15, y: 15 },
     socialLinks: {

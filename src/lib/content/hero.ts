@@ -18,7 +18,7 @@ export const heroSection: HeroSectionType = {
 
 export const heroImages: HeroImageType[] = [
   {
-    src: "/assets/cover/computer0.png",
+    src: "./assets/cover/computer0.png",
     alt: "Card 0",
     position: {
       right: "13%",
@@ -32,7 +32,7 @@ export const heroImages: HeroImageType[] = [
     delay: 6,
   },
   {
-    src: "/assets/cover/computer1.png",
+    src: "./assets/cover/computer1.png",
     alt: "Hero Image 2",
     position: {
       right: "10%",
@@ -46,7 +46,7 @@ export const heroImages: HeroImageType[] = [
     delay: 7,
   },
   {
-    src: "/assets/cover/computer2.png",
+    src: "./assets/cover/computer2.png",
     alt: "Hero Image 3",
     position: {
       right: "15%",
@@ -60,7 +60,7 @@ export const heroImages: HeroImageType[] = [
     delay: 8,
   },
   {
-    src: "/assets/icons/SSD.png",
+    src: "./assets/icons/SSD.png",
     alt: "Hero Image 4",
     position: {
       right: "42%",
@@ -74,7 +74,7 @@ export const heroImages: HeroImageType[] = [
     delay: 5,
   },
   {
-    src: "/assets/icons/keyboard.png",
+    src: "./assets/icons/keyboard.png",
     alt: "Hero Image 4",
     position: {
       right: "50%",
@@ -88,7 +88,7 @@ export const heroImages: HeroImageType[] = [
     delay: 5.5,
   },
   {
-    src: "/assets/icons/GPU.png",
+    src: "./assets/icons/GPU.png",
     alt: "Hero Image 4",
     position: {
       right: "35%",
@@ -102,7 +102,7 @@ export const heroImages: HeroImageType[] = [
     delay: 6,
   },
   {
-    src: "/assets/icons/card.png",
+    src: "./assets/icons/card.png",
     alt: "Hero Image 4",
     position: {
       right: "50%",

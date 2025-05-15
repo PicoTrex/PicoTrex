@@ -15,5 +15,5 @@ export const aboutSection: AboutSectionType = {
       'CSS Animations',
     ],
   },
-  img: '/favicons/android-chrome-512x512.png',
+  img: './favicons/android-chrome-512x512.png',
 };

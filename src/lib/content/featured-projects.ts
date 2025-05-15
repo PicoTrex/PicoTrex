@@ -13,7 +13,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       authors:
         "Zhiyuan Yan, Junyan Ye, Weijia Li, Zilong Huang, Shenghai Yuan, Xiangyang He, Kaiqing Lin, Jun He, Conghui He, Li Yuan",
       url: 'https://www.getlifegard.com/',
-      img: '/images/GPT-ImgEval.jpg',
+      img: './images/GPT-ImgEval.jpg',
       links: {
         paper: "https://arxiv.org/abs/2504.02782",
         github: "https://github.com/PicoTrex/GPT-ImgEval",
