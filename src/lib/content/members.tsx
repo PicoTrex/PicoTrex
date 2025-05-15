@@ -113,8 +113,6 @@ export const members: Member[] = [
     ],
     introduction: (
       <>
-      <ul>
-        <li>
         🎓 Currently a graduate student at SYSU, with Prof.{" "}
         <a
           href="https://ting-devin-han.github.io/Epingpages.github.io/"
@@ -123,21 +121,11 @@ export const members: Member[] = [
           className="hover:text-accent underline italic"
         >
           Yiping Chen
-        </a>.
-        </li>
-        <li>
-        ⚡ Interested in 3D reconstruction / generation, game development, front-end development.
-        </li>
-        <li>
-        🎮 I am a hardcore anime fan, and I also enjoy playing all kinds of games.
-        </li>
-        <li>
-        🌟 <span style={{ fontWeight: "bold" }}>My dream is to bring anime characters into the real world.</span>
-        </li>
-        <li>
+        </a>. <br />
+        ⚡ Interested in 3D reconstruction / generation, game development, front-end development. <br />
+        🎮 I am a hardcore anime fan, and I also enjoy playing all kinds of games. <br />
+        🌟 <span style={{ fontWeight: "bold" }}>My dream is to bring anime characters into the real world.</span> <br />
         🔭 I am learning everything I find interesting.
-        </li>
-      </ul>
       </>
     ),
     themeColor: "#FF6B6B",

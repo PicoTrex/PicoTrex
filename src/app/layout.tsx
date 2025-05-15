@@ -39,31 +39,31 @@ export const metadata: Metadata = {
     {
       rel: 'apple-touch-icon',
       sizes: '120x120',
-      url: '/favicons/apple-touch-icon.png',
+      url: './favicons/apple-touch-icon.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '512x512',
-      url: '/favicons/android-chrome-512x512.png',
+      url: './favicons/android-chrome-512x512.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '192x192',
-      url: '/favicons/android-chrome-192x192.png',
+      url: './favicons/android-chrome-192x192.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '32x32',
-      url: '/favicons/favicon-32x32.png',
+      url: './favicons/favicon-32x32.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '16x16',
-      url: '/favicons/favicon-16x16.png',
+      url: './favicons/favicon-16x16.png',
     },
   ],
 };
@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <script src="/scripts/no-flash.js" async />
+        <script src="./scripts/no-flash.js" async />
       </head>
       <body className={`text-text bg-bg ${fontVariables}`}>
         <Cursor className="hidden dark:lg:block" />
