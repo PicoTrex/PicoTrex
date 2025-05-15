@@ -261,7 +261,7 @@ const FeaturedProject = ({
             {links.huggingface && (
               <a href={links.huggingface} target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/assets/icons/huggingface.svg"
+                  src="./assets/icons/huggingface.svg"
                   alt="Hugging Face"
                   width={22}
                   height={22}
